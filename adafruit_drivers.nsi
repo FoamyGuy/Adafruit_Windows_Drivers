@@ -86,6 +86,10 @@ Section "Flora"
   ExecWait '"$dpinst" /s /path "$INSTDIR\Drivers\Adafruit_Flora"'
 SectionEnd
 
+Section "Circuit Playground"
+  ExecWait '"$dpinst" /s /path "$INSTDIR\Drivers\Adafruit_CircuitPlayground"'
+SectionEnd
+
 Section "Trinket / Pro Trinket / Gemma (USBtinyISP)"
   ExecWait '"$dpinst" /s /path "$INSTDIR\Drivers\USBtinyISP"'
 SectionEnd
