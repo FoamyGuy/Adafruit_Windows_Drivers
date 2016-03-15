@@ -69,47 +69,47 @@ SectionEnd
 Section "Feather 32u4"
   # Use dpisnt to install the driver.
   # Note the following options are specified:
-  #  /s = silent mode, hide the installer and OS prompts
+  #  /sw = silent mode, hide the installer but NOT the OS prompts (critical!)
   #  /path = path to directory with driver data
-  ExecWait '"$dpinst" /s /path "$INSTDIR\Drivers\Adafruit_Feather_32u4"'
+  ExecWait '"$dpinst" /sw /path "$INSTDIR\Drivers\Adafruit_Feather_32u4"'
 SectionEnd
 
 Section "Feather M0"
-  ExecWait '"$dpinst" /s /path "$INSTDIR\Drivers\Adafruit_Feather_M0"'
+  ExecWait '"$dpinst" /sw /path "$INSTDIR\Drivers\Adafruit_Feather_M0"'
 SectionEnd
 
 Section "Feather WICED"
-  ExecWait '"$dpinst" /s /path "$INSTDIR\Drivers\Adafruit_Feather_WICED"'
+  ExecWait '"$dpinst" /sw /path "$INSTDIR\Drivers\Adafruit_Feather_WICED"'
 SectionEnd
 
 Section "Flora"
-  ExecWait '"$dpinst" /s /path "$INSTDIR\Drivers\Adafruit_Flora"'
+  ExecWait '"$dpinst" /sw /path "$INSTDIR\Drivers\Adafruit_Flora"'
 SectionEnd
 
 Section "Circuit Playground"
-  ExecWait '"$dpinst" /s /path "$INSTDIR\Drivers\Adafruit_CircuitPlayground"'
+  ExecWait '"$dpinst" /sw /path "$INSTDIR\Drivers\Adafruit_CircuitPlayground"'
 SectionEnd
 
 Section "Trinket / Pro Trinket / Gemma (USBtinyISP)"
-  ExecWait '"$dpinst" /s /path "$INSTDIR\Drivers\USBtinyISP"'
+  ExecWait '"$dpinst" /sw /path "$INSTDIR\Drivers\USBtinyISP"'
 SectionEnd
 
 Section /o "Arduino Gemma"
-  ExecWait '"$dpinst" /s /path "$INSTDIR\Drivers\Arduino_Gemma"'
+  ExecWait '"$dpinst" /sw /path "$INSTDIR\Drivers\Arduino_Gemma"'
 SectionEnd
 
 Section /o "Feather HUZZAH ESP8266 (SiLabs CP210x)"
   ${If} ${AtMostWinVista}
     # Use older driver for XP & Vista.
-    ExecWait '"$dpinst" /s /path "$INSTDIR\Drivers\SiLabs_CP210x\WinVista"'
+    ExecWait '"$dpinst" /sw /path "$INSTDIR\Drivers\SiLabs_CP210x\WinVista"'
   ${Else}
     # User newer driver for 7 and beyond.
-    ExecWait '"$dpinst" /s /path "$INSTDIR\Drivers\SiLabs_CP210x\Win7"'
+    ExecWait '"$dpinst" /sw /path "$INSTDIR\Drivers\SiLabs_CP210x\Win7"'
   ${EndIf}
 SectionEnd
 
 Section /o "Metro 328 / Metro Mini 328 (FTDI VCP)"
-  ExecWait '"$dpinst" /s /path "$INSTDIR\Drivers\FTDI_VCP"'
+  ExecWait '"$dpinst" /sw /path "$INSTDIR\Drivers\FTDI_VCP"'
 SectionEnd
 
 Section /o "Bluefruit LE Micro (PJRC CDC)"
