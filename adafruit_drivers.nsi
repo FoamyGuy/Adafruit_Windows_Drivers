@@ -79,7 +79,11 @@ Section "Feather M0"
 SectionEnd
 
 Section "Feather WICED"
+  # Install all three drivers (each _must_ be in its own directory or
+  # dpinst will silently fail!).
   ExecWait '"$dpinst" /sw /path "$INSTDIR\Drivers\Adafruit_Feather_WICED"'
+  ExecWait '"$dpinst" /sw /path "$INSTDIR\Drivers\Adafruit_Feather_WICED_CDC"'
+  ExecWait '"$dpinst" /sw /path "$INSTDIR\Drivers\Adafruit_Feather_WICED_DFU"'
 SectionEnd
 
 Section "Flora"
@@ -109,7 +113,8 @@ Section /o "Feather HUZZAH ESP8266 (SiLabs CP210x)"
 SectionEnd
 
 Section /o "Metro 328 / Metro Mini 328 (FTDI VCP)"
-  ExecWait '"$dpinst" /sw /path "$INSTDIR\Drivers\FTDI_VCP"'
+  ExecWait '"$dpinst" /sw /path "$INSTDIR\Drivers\FTDI_VCP_PORT"'
+  ExecWait '"$dpinst" /sw /path "$INSTDIR\Drivers\FTDI_VCP_BUS"'
 SectionEnd
 
 Section /o "Bluefruit LE Micro (PJRC CDC)"
