@@ -78,6 +78,10 @@ Section "Feather M0"
   ExecWait '"$dpinst" /sw /path "$INSTDIR\Drivers\Adafruit_Feather_M0"'
 SectionEnd
 
+Section "Feather M0 Express"
+  ExecWait '"$dpinst" /sw /path "$INSTDIR\Drivers\Adafruit_Feather_M0_Express"'
+SectionEnd
+
 Section "Feather WICED"
   # Install all three drivers (each _must_ be in its own directory or
   # dpinst will silently fail!).
