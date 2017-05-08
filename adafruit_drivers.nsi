@@ -82,6 +82,11 @@ Section "Feather M0 Express"
   ExecWait '"$dpinst" /sw /path "$INSTDIR\Drivers\Adafruit_Feather_M0_Express"'
 SectionEnd
 
+Section "Metro M0 Express"
+  ExecWait '"$dpinst" /sw /path "$INSTDIR\Drivers\Adafruit_Metro_M0_Express"'
+SectionEnd
+
+
 Section "Feather WICED"
   # Install all three drivers (each _must_ be in its own directory or
   # dpinst will silently fail!).
@@ -116,9 +121,16 @@ Section /o "Feather HUZZAH ESP8266 (SiLabs CP210x)"
   ${EndIf}
 SectionEnd
 
-Section /o "Metro 328 / Metro Mini 328 (FTDI VCP)"
+Section /o "Metro 328 / Metro Mini 328 (FTDI VCP and CP210X)"
   ExecWait '"$dpinst" /sw /path "$INSTDIR\Drivers\FTDI_VCP_PORT"'
   ExecWait '"$dpinst" /sw /path "$INSTDIR\Drivers\FTDI_VCP_BUS"'
+  ${If} ${AtMostWinVista}
+    # Use older driver for XP & Vista.
+    ExecWait '"$dpinst" /sw /path "$INSTDIR\Drivers\SiLabs_CP210x\WinVista"'
+  ${Else}
+    # User newer driver for 7 and beyond.
+    ExecWait '"$dpinst" /sw /path "$INSTDIR\Drivers\SiLabs_CP210x\Win7"'
+  ${EndIf}
 SectionEnd
 
 Section /o "Bluefruit LE Micro (PJRC CDC)"
