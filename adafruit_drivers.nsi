@@ -86,6 +86,14 @@ Section "Metro M0 Express" METRO_M0_EXPRESS
   ExecWait '"$dpinst" /sw /path "$INSTDIR\Drivers\Adafruit_Metro_M0_Express"'
 SectionEnd
 
+Section "Circuit Playground Express" CIRCUIT_PLAYGROUND_EXPRESS
+  ExecWait '"$dpinst" /sw /path "$INSTDIR\Drivers\Adafruit_CircuitPlayground_Express"'
+SectionEnd
+
+Section "Gemma M0" GEMMA_M0
+  ExecWait '"$dpinst" /sw /path "$INSTDIR\Drivers\Adafruit_Gemma_M0"'
+SectionEnd
+
 
 Section "Feather WICED"
   # Install all three drivers (each _must_ be in its own directory or
@@ -157,8 +165,8 @@ Function .onInit
     ${HideSection} ${FEATHER_M0}
     ${HideSection} ${FEATHER_M0_EXPRESS}
     ${HideSection} ${METRO_M0_EXPRESS}
-    ${HideSection} ${FLORA}
-    ${HideSection} ${METRO_M0_EXPRESS}
+    ${HideSection} ${CIRCUIT_PLAYGROUND_EXPRESS}
+    ${HideSection} ${GEMMA_M0}
     ${HideSection} ${FLORA}
     ${HideSection} ${CIRCUIT_PLAYGROUND}
     ${HideSection} ${ARDUINO_GEMMA}
