@@ -95,6 +95,13 @@ Section "Gemma M0" GEMMA_M0
 SectionEnd
 
 
+Section "Trinket M0" TRINKET_M0
+  ExecWait '"$dpinst" /sw /path "$INSTDIR\Drivers\Adafruit_Trinket_M0"'
+SectionEnd
+
+
+
+
 Section "Feather WICED"
   # Install all three drivers (each _must_ be in its own directory or
   # dpinst will silently fail!).
@@ -167,6 +174,7 @@ Function .onInit
     ${HideSection} ${METRO_M0_EXPRESS}
     ${HideSection} ${CIRCUIT_PLAYGROUND_EXPRESS}
     ${HideSection} ${GEMMA_M0}
+    ${HideSection} ${TRINKET_M0}
     ${HideSection} ${FLORA}
     ${HideSection} ${CIRCUIT_PLAYGROUND}
     ${HideSection} ${ARDUINO_GEMMA}
