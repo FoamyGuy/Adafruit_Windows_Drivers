@@ -21,9 +21,9 @@ VIAddVersionKey /LANG=1033 "ProductName" "Adafruit Board Drivers"
 VIAddVersionKey /LANG=1033 "CompanyName" "Adafruit Industries"
 VIAddVersionKey /LANG=1033 "LegalCopyright" "Adafruit Industries"
 VIAddVersionKey /LANG=1033 "FileDescription" "All in one installer for Adafruit's board drivers."
-VIAddVersionKey /LANG=1033 "FileVersion" "1.1.0"
-VIProductVersion "1.1.0.0"
-VIFileVersion "1.1.0.0"
+VIAddVersionKey /LANG=1033 "FileVersion" "2.0.0"
+VIProductVersion "2.0.0.0"
+VIFileVersion "2.0.0.0"
 
 # Define variables used in sections.
 Var dpinst   # Will hold the path and name of dpinst being used (x86 or x64).
@@ -66,41 +66,13 @@ Section
   ${EndIf}
 SectionEnd
 
-Section "Feather 32u4" FEATHER_32U4
+Section "Feather 32u4, Feather M0, Feather M0 Express, Metro M0 Express, Circuit Playground, CircuitPlayground Express, Gemma M0, Trinket M0, Flora, Bluefruit Micro" USBSER_BOARDS
   # Use dpinst to install the driver.
   # Note the following options are specified:
   #  /sw = silent mode, hide the installer but NOT the OS prompts (critical!)
   #  /path = path to directory with driver data
-  ExecWait '"$dpinst" /sw /path "$INSTDIR\Drivers\Adafruit_Feather_32u4"'
+  ExecWait '"$dpinst" /sw /path "$INSTDIR\Drivers\Adafruit_usbser"'
 SectionEnd
-
-Section "Feather M0" FEATHER_M0
-  ExecWait '"$dpinst" /sw /path "$INSTDIR\Drivers\Adafruit_Feather_M0"'
-SectionEnd
-
-Section "Feather M0 Express" FEATHER_M0_EXPRESS
-  ExecWait '"$dpinst" /sw /path "$INSTDIR\Drivers\Adafruit_Feather_M0_Express"'
-SectionEnd
-
-Section "Metro M0 Express" METRO_M0_EXPRESS
-  ExecWait '"$dpinst" /sw /path "$INSTDIR\Drivers\Adafruit_Metro_M0_Express"'
-SectionEnd
-
-Section "Circuit Playground Express" CIRCUIT_PLAYGROUND_EXPRESS
-  ExecWait '"$dpinst" /sw /path "$INSTDIR\Drivers\Adafruit_CircuitPlayground_Express"'
-SectionEnd
-
-Section "Gemma M0" GEMMA_M0
-  ExecWait '"$dpinst" /sw /path "$INSTDIR\Drivers\Adafruit_Gemma_M0"'
-SectionEnd
-
-
-Section "Trinket M0" TRINKET_M0
-  ExecWait '"$dpinst" /sw /path "$INSTDIR\Drivers\Adafruit_Trinket_M0"'
-SectionEnd
-
-
-
 
 Section "Feather WICED"
   # Install all three drivers (each _must_ be in its own directory or
@@ -111,14 +83,6 @@ Section "Feather WICED"
     ExecWait '"$dpinst" /sw /path "$INSTDIR\Drivers\Adafruit_Feather_WICED_CDC"'
   ${EndIf}
   ExecWait '"$dpinst" /sw /path "$INSTDIR\Drivers\Adafruit_Feather_WICED_DFU"'
-SectionEnd
-
-Section "Flora" FLORA
-  ExecWait '"$dpinst" /sw /path "$INSTDIR\Drivers\Adafruit_Flora"'
-SectionEnd
-
-Section "Circuit Playground" CIRCUIT_PLAYGROUND
-  ExecWait '"$dpinst" /sw /path "$INSTDIR\Drivers\Adafruit_CircuitPlayground"'
 SectionEnd
 
 Section "Trinket / Pro Trinket / Gemma (USBtinyISP)"
@@ -151,12 +115,6 @@ Section /o "Metro 328 / Metro Mini 328 (FTDI VCP and CP210X)"
   ${EndIf}
 SectionEnd
 
-Section /o "Bluefruit LE Micro (PJRC CDC)" BLUEFRUIT_LE_MICRO
-  # PJRC CDC is not needed for Windows 10. The installer checks for Win10 and does nothing.
-  # PJRC CDC has its own installer so just invoke that executable.
-  ExecWait "$INSTDIR\Drivers\PJRC_CDC\PJRC CDC serial_install.exe"
-SectionEnd
-
 # Unselect, disable, and hide the given section.
 !macro HideSectionMacro SectionId
   SectionSetFlags ${SectionId} ${SF_RO}
@@ -168,16 +126,7 @@ SectionEnd
 Function .onInit
   # Hide all drivers that aren't needed in Windows 10.
   ${If} ${AtLeastWin10}
-    ${HideSection} ${FEATHER_32U4}
-    ${HideSection} ${FEATHER_M0}
-    ${HideSection} ${FEATHER_M0_EXPRESS}
-    ${HideSection} ${METRO_M0_EXPRESS}
-    ${HideSection} ${CIRCUIT_PLAYGROUND_EXPRESS}
-    ${HideSection} ${GEMMA_M0}
-    ${HideSection} ${TRINKET_M0}
-    ${HideSection} ${FLORA}
-    ${HideSection} ${CIRCUIT_PLAYGROUND}
+    ${HideSection} ${USBSER_BOARDS}
     ${HideSection} ${ARDUINO_GEMMA}
-    ${HideSection} ${BLUEFRUIT_LE_MICRO}
   ${EndIf}
 FunctionEnd
