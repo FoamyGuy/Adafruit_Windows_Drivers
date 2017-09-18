@@ -5,11 +5,13 @@
 !include WinVer.nsh   # Windows version detection.
 !include x64.nsh      # X86/X64 version detection.
 
+!define VERSION 2.0.0.0
+
 # Set attributes that describe the installer.
 Icon "Assets\adafruit.ico"
 Caption "Adafruit Board Drivers"
 Name "Adafruit board drivers"
-Outfile "adafruit_drivers.exe"
+Outfile "adafruit_drivers_${VERSION}.exe"
 ManifestSupportedOS "all"
 SpaceTexts "none"
 
@@ -21,9 +23,9 @@ VIAddVersionKey /LANG=1033 "ProductName" "Adafruit Board Drivers"
 VIAddVersionKey /LANG=1033 "CompanyName" "Adafruit Industries"
 VIAddVersionKey /LANG=1033 "LegalCopyright" "Adafruit Industries"
 VIAddVersionKey /LANG=1033 "FileDescription" "All in one installer for Adafruit's board drivers."
-VIAddVersionKey /LANG=1033 "FileVersion" "2.0.0"
-VIProductVersion "2.0.0.0"
-VIFileVersion "2.0.0.0"
+VIAddVersionKey /LANG=1033 "FileVersion" "2.0.0.0"
+VIProductVersion ${VERSION}
+VIFileVersion ${VERSION}
 
 # Define variables used in sections.
 Var dpinst   # Will hold the path and name of dpinst being used (x86 or x64).
