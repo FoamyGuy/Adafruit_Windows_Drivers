@@ -164,6 +164,9 @@ ServiceBinary=%12%\%DRIVERFILENAME%.sys
 "%METRO_M4_EXPRESS% Bootloader (0020:00)"=DriverInstall, USB\VID_239A&PID_0020
 "%METRO_M4_EXPRESS% Arduino (8020:00)"=DriverInstall, USB\VID_239A&PID_8020&MI_00
 
+"%FEATHER_M4_EXPRESS% Bootloader (0022:00)"=DriverInstall, USB\VID_239A&PID_0022
+"%FEATHER_M4_EXPRESS% Arduino (8022:00)"=DriverInstall, USB\VID_239A&PID_8022&MI_00
+
 ;------------------------------------------------------------------------------
 ;  String Definitions
 ;------------------------------------------------------------------------------
@@ -181,6 +184,7 @@ GEMMA_M0="Adafruit Gemma M0"
 METRO_M0_EXPRESS="Adafruit Metro M0 Express"
 TRINKET_M0="Adafruit Trinket M0"
 METRO_M4_EXPRESS="Adafruit Metro M4 Express"
+FEATHER_M4_EXPRESS="Adafruit Feather M4 Express"
 
 MFGFILENAME="Adafruit_usbser"
 DRIVERFILENAME ="usbser"
