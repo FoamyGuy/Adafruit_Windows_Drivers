@@ -104,7 +104,6 @@ ServiceBinary=%12%\%DRIVERFILENAME%.sys
 "%FEATHER_32U4% Bootloader (000C)"=DriverInstall, USB\VID_239A&PID_000C
 "%FEATHER_32U4% (800C:00)"=DriverInstall, USB\VID_239A&PID_800C&MI_00
 
-"%FEATHER_M0% UF2 (000B:00)"=DriverInstall, USB\VID_239A&PID_000B&MI_00
 "%FEATHER_M0% Bootloader (000B)"=DriverInstall, USB\VID_239A&PID_000B
 ;; historical: in CPy board config
 "%FEATHER_M0% (8015:00)"=DriverInstall, USB\VID_239A&PID_8015&MI_00
@@ -131,8 +130,23 @@ ServiceBinary=%12%\%DRIVERFILENAME%.sys
 "%FEATHER_M4_EXPRESS% Bootloader (0022:00)"=DriverInstall, USB\VID_239A&PID_0022
 "%FEATHER_M4_EXPRESS% Arduino (8022:00)"=DriverInstall, USB\VID_239A&PID_8022&MI_00
 
+"%FEATHER_M0_RADIOFRUIT% Bootloader (0024:00)"=DriverInstall, USB\VID_239A&PID_0024&MI_00
+"%FEATHER_M0_RADIOFRUIT% Arduino (8024:00)"=DriverInstall, USB\VID_239A&PID_8024&MI_00
+"%FEATHER_M0_RADIOFRUIT% CircuitPython (8025:00)"=DriverInstall, USB\VID_239A&PID_8025&MI_00
+
+"%ITSYBITSY_32U4_3V% Bootloader (000D:00)"=DriverInstall, USB\VID_239A&PID_000D
+"%ITSYBITSY_32U4_3V% (800D:00)"=DriverInstall, USB\VID_239A&PID_800D&MI_00
+
+"%ITSYBITSY_32U4_5V% Bootloader (000E:00)"=DriverInstall, USB\VID_239A&PID_000E
+"%ITSYBITSY_32U4_5V% (800E:00)"=DriverInstall, USB\VID_239A&PID_800E&MI_00
+
+"%ITSYBITSY_M0_EXPRESS% Bootloader (000F:00)"=DriverInstall, USB\VID_239A&PID_000F
+"%ITSYBITSY_M0_EXPRESS% (800F:00)"=DriverInstall, USB\VID_239A&PID_800F&MI_00
+"%ITSYBITSY_M0_EXPRESS% CircuitPython (8012:00)"=DriverInstall, USB\VID_239A&PID_8012&MI_00
+
 
 [DeviceList.NTamd64]
+
 "%FLORA% Bootloader (0004)"=DriverInstall, USB\VID_239A&PID_0004
 "%FLORA% (8004:00)"=DriverInstall, USB\VID_239A&PID_8004&MI_00
 
@@ -149,7 +163,6 @@ ServiceBinary=%12%\%DRIVERFILENAME%.sys
 "%FEATHER_32U4% Bootloader (000C)"=DriverInstall, USB\VID_239A&PID_000C
 "%FEATHER_32U4% (800C:00)"=DriverInstall, USB\VID_239A&PID_800C&MI_00
 
-"%FEATHER_M0% UF2 (000B:00)"=DriverInstall, USB\VID_239A&PID_000B&MI_00
 "%FEATHER_M0% Bootloader (000B)"=DriverInstall, USB\VID_239A&PID_000B
 ;; historical: in CPy board config
 "%FEATHER_M0% (8015:00)"=DriverInstall, USB\VID_239A&PID_8015&MI_00
@@ -175,6 +188,20 @@ ServiceBinary=%12%\%DRIVERFILENAME%.sys
 
 "%FEATHER_M4_EXPRESS% Bootloader (0022:00)"=DriverInstall, USB\VID_239A&PID_0022
 "%FEATHER_M4_EXPRESS% Arduino (8022:00)"=DriverInstall, USB\VID_239A&PID_8022&MI_00
+
+"%FEATHER_M0_RADIOFRUIT% Bootloader (0024:00)"=DriverInstall, USB\VID_239A&PID_0024&MI_00
+"%FEATHER_M0_RADIOFRUIT% Arduino (8024:00)"=DriverInstall, USB\VID_239A&PID_8024&MI_00
+"%FEATHER_M0_RADIOFRUIT% CircuitPython (8025:00)"=DriverInstall, USB\VID_239A&PID_8025&MI_00
+
+"%ITSYBITSY_32U4_3V% Bootloader (000D:00)"=DriverInstall, USB\VID_239A&PID_000D
+"%ITSYBITSY_32U4_3V% (800D:00)"=DriverInstall, USB\VID_239A&PID_800D&MI_00
+
+"%ITSYBITSY_32U4_5V% Bootloader (000E:00)"=DriverInstall, USB\VID_239A&PID_000E
+"%ITSYBITSY_32U4_5V% (800E:00)"=DriverInstall, USB\VID_239A&PID_800E&MI_00
+
+"%ITSYBITSY_M0_EXPRESS% Bootloader (000F:00)"=DriverInstall, USB\VID_239A&PID_000F
+"%ITSYBITSY_M0_EXPRESS% (800F:00)"=DriverInstall, USB\VID_239A&PID_800F&MI_00
+"%ITSYBITSY_M0_EXPRESS% CircuitPython (8012:00)"=DriverInstall, USB\VID_239A&PID_8012&MI_00
 
 ;------------------------------------------------------------------------------
 ;  String Definitions
@@ -194,6 +221,10 @@ METRO_M0_EXPRESS="Adafruit Metro M0 Express"
 TRINKET_M0="Adafruit Trinket M0"
 METRO_M4_EXPRESS="Adafruit Metro M4 Express"
 FEATHER_M4_EXPRESS="Adafruit Feather M4 Express"
+FEATHER_M0_RADIOFRUIT="Adafruit Feather RadioFruit"
+ITSYBITSY_32U4_5V="Adafruit ItsyBitsy 32u4 5V"
+ITSYBITSY_32U4_3V="Adafruit ItsyBitsy 32u4 3V"
+ITSYBITSY_M0_EXPRESS="Adafruit ItsyBitsy M0 Express"
 
 MFGFILENAME="Adafruit_usbser"
 DRIVERFILENAME ="usbser"
