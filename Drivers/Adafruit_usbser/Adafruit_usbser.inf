@@ -148,6 +148,11 @@ ServiceBinary=%12%\%DRIVERFILENAME%.sys
 "%ITSYBITSY_M0_EXPRESS% (800F:00)"=DriverInstall, USB\VID_239A&PID_800F&MI_00
 "%ITSYBITSY_M0_EXPRESS% CircuitPython (8012:00)"=DriverInstall, USB\VID_239A&PID_8012&MI_00
 
+"%PIRKEY_M0% Bootloader (0027:00)"=DriverInstall, USB\VID_239A&PID_0027&MI_00
+"%PIRKEY_M0% (8027:00)"=DriverInstall, USB\VID_239A&PID_8027&MI_00
+"%PIRKEY_M0% CircuitPython (8028:00)"=DriverInstall, USB\VID_239A&PID_8028&MI_00
+
+
 
 [DeviceList.NTamd64]
 
@@ -211,6 +216,10 @@ ServiceBinary=%12%\%DRIVERFILENAME%.sys
 "%ITSYBITSY_M0_EXPRESS% (800F:00)"=DriverInstall, USB\VID_239A&PID_800F&MI_00
 "%ITSYBITSY_M0_EXPRESS% CircuitPython (8012:00)"=DriverInstall, USB\VID_239A&PID_8012&MI_00
 
+"%PIRKEY_M0% Bootloader (0027:00)"=DriverInstall, USB\VID_239A&PID_0027&MI_00
+"%PIRKEY_M0% (8027:00)"=DriverInstall, USB\VID_239A&PID_8027&MI_00
+"%PIRKEY_M0% CircuitPython (8028:00)"=DriverInstall, USB\VID_239A&PID_8028&MI_00
+
 ;------------------------------------------------------------------------------
 ;  String Definitions
 ;------------------------------------------------------------------------------
@@ -233,6 +242,7 @@ FEATHER_M0_RADIOFRUIT="Adafruit Feather RadioFruit"
 ITSYBITSY_32U4_5V="Adafruit ItsyBitsy 32u4 5V"
 ITSYBITSY_32U4_3V="Adafruit ItsyBitsy 32u4 3V"
 ITSYBITSY_M0_EXPRESS="Adafruit ItsyBitsy M0 Express"
+PIRKEY_M0="Adafruit pIRKey M0"
 
 MFGFILENAME="Adafruit_usbser"
 DRIVERFILENAME ="usbser"
