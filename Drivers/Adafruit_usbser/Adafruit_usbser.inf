@@ -263,7 +263,7 @@ ITSYBITSY_M0_EXPRESS="Adafruit ItsyBitsy M0 Express"
 ITSYBITSY_M4_EXPRESS="Adafruit ItsyBitsy M4 Express"
 PIRKEY_M0="Adafruit pIRKey M0"
 TEENSY_36="PJRC Teensy 3.6"
-CRICKIT_M0"Adafruit CRICKit M0"
+CRICKIT_M0="Adafruit CRICKit M0"
 
 MFGFILENAME="Adafruit_usbser"
 DRIVERFILENAME ="usbser"
