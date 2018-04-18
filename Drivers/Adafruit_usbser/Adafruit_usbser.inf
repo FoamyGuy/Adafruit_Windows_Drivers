@@ -152,7 +152,15 @@ ServiceBinary=%12%\%DRIVERFILENAME%.sys
 "%PIRKEY_M0% (8027:00)"=DriverInstall, USB\VID_239A&PID_8027&MI_00
 "%PIRKEY_M0% CircuitPython (8028:00)"=DriverInstall, USB\VID_239A&PID_8028&MI_00
 
+"%ITSYBITSY_M4_EXPRESS% Bootloader (002B:00)"=DriverInstall, USB\VID_239A&PID_002B&MI_00
+"%ITSYBITSY_M4_EXPRESS% Arduino (802B:00)"=DriverInstall, USB\VID_239A&PID_802B&MI_00
+"%ITSYBITSY_M4_EXPRESS% CircuitPython (802C:00)"=DriverInstall, USB\VID_239A&PID_802C&MI_00
 
+"%CRICKIT_M0% Bootloader (002D:00)"=DriverInstall, USB\VID_239A&PID_002D&MI_00
+"%CRICKIT_M0% (802D:00)"=DriverInstall, USB\VID_239A&PID_802D&MI_00
+"%CRICKIT_M0% CircuitPython (802E:00)"=DriverInstall, USB\VID_239A&PID_802E&MI_00
+
+"%TEENSY_36% Arduino (16C0/0483)"=DriverInstall, USB\VID_16C0&PID_0483
 
 [DeviceList.NTamd64]
 
@@ -220,6 +228,16 @@ ServiceBinary=%12%\%DRIVERFILENAME%.sys
 "%PIRKEY_M0% (8027:00)"=DriverInstall, USB\VID_239A&PID_8027&MI_00
 "%PIRKEY_M0% CircuitPython (8028:00)"=DriverInstall, USB\VID_239A&PID_8028&MI_00
 
+"%ITSYBITSY_M4_EXPRESS% Bootloader (002B:00)"=DriverInstall, USB\VID_239A&PID_002B&MI_00
+"%ITSYBITSY_M4_EXPRESS% Arduino (802B:00)"=DriverInstall, USB\VID_239A&PID_802B&MI_00
+"%ITSYBITSY_M4_EXPRESS% CircuitPython (802C:00)"=DriverInstall, USB\VID_239A&PID_802C&MI_00
+
+"%CRICKIT_M0% Bootloader (002D:00)"=DriverInstall, USB\VID_239A&PID_002D&MI_00
+"%CRICKIT_M0% (802D:00)"=DriverInstall, USB\VID_239A&PID_802D&MI_00
+"%CRICKIT_M0% CircuitPython (802E:00)"=DriverInstall, USB\VID_239A&PID_802E&MI_00
+
+"%TEENSY_36% Arduino (16C0/0483)"=DriverInstall, USB\VID_16C0&PID_0483
+
 ;------------------------------------------------------------------------------
 ;  String Definitions
 ;------------------------------------------------------------------------------
@@ -242,7 +260,10 @@ FEATHER_M0_RADIOFRUIT="Adafruit Feather RadioFruit"
 ITSYBITSY_32U4_5V="Adafruit ItsyBitsy 32u4 5V"
 ITSYBITSY_32U4_3V="Adafruit ItsyBitsy 32u4 3V"
 ITSYBITSY_M0_EXPRESS="Adafruit ItsyBitsy M0 Express"
+ITSYBITSY_M4_EXPRESS="Adafruit ItsyBitsy M4 Express"
 PIRKEY_M0="Adafruit pIRKey M0"
+TEENSY_36="PJRC Teensy 3.6"
+CRICKIT_M0"Adafruit CRICKit M0"
 
 MFGFILENAME="Adafruit_usbser"
 DRIVERFILENAME ="usbser"
