@@ -161,6 +161,8 @@ ServiceBinary=%12%\%DRIVERFILENAME%.sys
 "%CRICKIT_M0% (802D:00)"=DriverInstall, USB\VID_239A&PID_802D&MI_00
 "%CRICKIT_M0% CircuitPython (802E:00)"=DriverInstall, USB\VID_239A&PID_802E&MI_00
 
+"%FEATHER_NRF52840% Bootloader (0029:00)"=DriverInstall, USB\VID_239A&PID_0029&MI_00
+
 "%TEENSY_36% Arduino (16C0/0483)"=DriverInstall, USB\VID_16C0&PID_0483
 
 [DeviceList.NTamd64]
@@ -238,6 +240,8 @@ ServiceBinary=%12%\%DRIVERFILENAME%.sys
 "%CRICKIT_M0% (802D:00)"=DriverInstall, USB\VID_239A&PID_802D&MI_00
 "%CRICKIT_M0% CircuitPython (802E:00)"=DriverInstall, USB\VID_239A&PID_802E&MI_00
 
+"%FEATHER_NRF52840% Bootloader (0029:00)"=DriverInstall, USB\VID_239A&PID_0029&MI_00
+
 "%TEENSY_36% Arduino (16C0/0483)"=DriverInstall, USB\VID_16C0&PID_0483
 
 ;------------------------------------------------------------------------------
@@ -266,6 +270,7 @@ ITSYBITSY_M4_EXPRESS="Adafruit ItsyBitsy M4 Express"
 PIRKEY_M0="Adafruit pIRKey M0"
 TEENSY_36="PJRC Teensy 3.6"
 CRICKIT_M0="Adafruit Crickit M0"
+FEATHER_NRF52840="Feather nRF52840"
 
 MFGFILENAME="Adafruit_usbser"
 DRIVERFILENAME ="usbser"
