@@ -11,7 +11,7 @@ ClassGuid={4D36E978-E325-11CE-BFC1-08002BE10318}
 Provider=%MFGNAME%
 LayoutFile=layout.inf
 CatalogFile=%MFGFILENAME%.cat
-DriverVer=07/30/2018,10.2.3.1
+DriverVer=07/30/2018,10.2.3.2
 DriverPackageDisplayName=%DESCRIPTION%
 
 [Manufacturer]
@@ -103,10 +103,10 @@ AddService=, 0x00000002
 [SourceDisksFiles]
 [SourceDisksNames]
 [DeviceList]
-"%FLORA% Bootloader (0004)"=DriverInstall, USB\VID_239A&PID_0004&MI_00
+"%FLORA% Bootloader (0004)"=DriverInstall, USB\VID_239A&PID_0004
 "%FLORA% Arduino (8004:00)"=DriverInstall, USB\VID_239A&PID_8004&MI_00
 
-"%CIRCUIT_PLAYGROUND% Bootloader (0011)"=DriverInstall, USB\VID_239A&PID_0011&MI_00
+"%CIRCUIT_PLAYGROUND% Bootloader (0011)"=DriverInstall, USB\VID_239A&PID_0011
 "%CIRCUIT_PLAYGROUND% Arduino (8011:00)"=DriverInstall, USB\VID_239A&PID_8011&MI_00
 
 "%CIRCUIT_PLAYGROUND_EXPRESS% UF2 Bootloader (0018:00)"=DriverInstall, USB\VID_239A&PID_0018&MI_00
@@ -114,7 +114,7 @@ AddService=, 0x00000002
 "%CIRCUIT_PLAYGROUND_EXPRESS% Arduino (8018:00)"=DriverInstall, USB\VID_239A&PID_8018&MI_00
 "%CIRCUIT_PLAYGROUND_EXPRESS% CircuitPython (8019:00)"=DriverInstall, USB\VID_239A&PID_8019&MI_00
 
-"%BLUEFRUIT_MICRO% Bootloader (000A)"=DriverInstall, USB\VID_239A&PID_000A&MI_00
+"%BLUEFRUIT_MICRO% Bootloader (000A)"=DriverInstall, USB\VID_239A&PID_000A
 "%BLUEFRUIT_MICRO% Arduino (800A:00)"=DriverInstall, USB\VID_239A&PID_800A&MI_00
 
 "%FEATHER_32U4% Bootloader (000C)"=DriverInstall, USB\VID_239A&PID_000C
@@ -202,10 +202,10 @@ AddService=, 0x00000002
 "%TEENSY_36% Arduino (16C0/0483)"=DriverInstall, USB\VID_16C0&PID_0483
 
 [DeviceList.NTamd64]
-"%FLORA% Bootloader (0004)"=DriverInstall, USB\VID_239A&PID_0004&MI_00
+"%FLORA% Bootloader (0004)"=DriverInstall, USB\VID_239A&PID_0004
 "%FLORA% Arduino (8004:00)"=DriverInstall, USB\VID_239A&PID_8004&MI_00
 
-"%CIRCUIT_PLAYGROUND% Bootloader (0011)"=DriverInstall, USB\VID_239A&PID_0011&MI_00
+"%CIRCUIT_PLAYGROUND% Bootloader (0011)"=DriverInstall, USB\VID_239A&PID_0011
 "%CIRCUIT_PLAYGROUND% Arduino (8011:00)"=DriverInstall, USB\VID_239A&PID_8011&MI_00
 
 "%CIRCUIT_PLAYGROUND_EXPRESS% UF2 Bootloader (0018:00)"=DriverInstall, USB\VID_239A&PID_0018&MI_00
@@ -213,7 +213,7 @@ AddService=, 0x00000002
 "%CIRCUIT_PLAYGROUND_EXPRESS% Arduino (8018:00)"=DriverInstall, USB\VID_239A&PID_8018&MI_00
 "%CIRCUIT_PLAYGROUND_EXPRESS% CircuitPython (8019:00)"=DriverInstall, USB\VID_239A&PID_8019&MI_00
 
-"%BLUEFRUIT_MICRO% Bootloader (000A)"=DriverInstall, USB\VID_239A&PID_000A&MI_00
+"%BLUEFRUIT_MICRO% Bootloader (000A)"=DriverInstall, USB\VID_239A&PID_000A
 "%BLUEFRUIT_MICRO% Arduino (800A:00)"=DriverInstall, USB\VID_239A&PID_800A&MI_00
 
 "%FEATHER_32U4% Bootloader (000C)"=DriverInstall, USB\VID_239A&PID_000C
