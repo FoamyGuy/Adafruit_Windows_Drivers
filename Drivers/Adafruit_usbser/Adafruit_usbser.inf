@@ -121,11 +121,10 @@ AddService=, 0x00000002
 "%FEATHER_32U4% Arduino (800C:00)"=DriverInstall, USB\VID_239A&PID_800C&MI_00
 
 "%FEATHER_M0% Bootloader (000B)"=DriverInstall, USB\VID_239A&PID_000B
-"%FEATHER_M0% UF2 Bootloader (0015)"=DriverInstall, USB\VID_239A&PID_0015
+"%FEATHER_M0% UF2 Bootloader (0015:00)"=DriverInstall, USB\VID_239A&PID_0015&MI_00
 "%FEATHER_M0% UF2 WebUSB dummy (0015:04)"=NullInstall, USB\VID_239A&PID_0015&MI_04
-;; historical: in CPy board config
-"%FEATHER_M0% (8015:00)"=DriverInstall, USB\VID_239A&PID_8015&MI_00
-"%FEATHER_M0% CircuitPython (800B:00)"=DriverInstall, USB\VID_239A&PID_800B&MI_00
+"%FEATHER_M0% Arduino (800B:00)"=DriverInstall, USB\VID_239A&PID_800B&MI_00
+"%FEATHER_M0% CircuitPython (8015:00)"=DriverInstall, USB\VID_239A&PID_8015&MI_00
 
 "%FEATHER_M0_EXPRESS% UF2 Bootloader (001B:00)"=DriverInstall, USB\VID_239A&PID_001B&MI_00
 "%FEATHER_M0_EXPRESS% UF2 WebUSB dummy (001B:04)"=NullInstall, USB\VID_239A&PID_001B&MI_04
@@ -220,11 +219,10 @@ AddService=, 0x00000002
 "%FEATHER_32U4% Arduino (800C:00)"=DriverInstall, USB\VID_239A&PID_800C&MI_00
 
 "%FEATHER_M0% Bootloader (000B)"=DriverInstall, USB\VID_239A&PID_000B
-"%FEATHER_M0% UF2 Bootloader (0015)"=DriverInstall, USB\VID_239A&PID_0015
+"%FEATHER_M0% UF2 Bootloader (0015:00)"=DriverInstall, USB\VID_239A&PID_0015&MI_00
 "%FEATHER_M0% UF2 WebUSB dummy (0015:04)"=NullInstall, USB\VID_239A&PID_0015&MI_04
-;; historical: in CPy board config
-"%FEATHER_M0% (8015:00)"=DriverInstall, USB\VID_239A&PID_8015&MI_00
-"%FEATHER_M0% CircuitPython (800B:00)"=DriverInstall, USB\VID_239A&PID_800B&MI_00
+"%FEATHER_M0% Arduino (800B:00)"=DriverInstall, USB\VID_239A&PID_800B&MI_00
+"%FEATHER_M0% CircuitPython (8015:00)"=DriverInstall, USB\VID_239A&PID_8015&MI_00
 
 "%FEATHER_M0_EXPRESS% UF2 Bootloader (001B:00)"=DriverInstall, USB\VID_239A&PID_001B&MI_00
 "%FEATHER_M0_EXPRESS% UF2 WebUSB dummy (001B:04)"=NullInstall, USB\VID_239A&PID_001B&MI_04
