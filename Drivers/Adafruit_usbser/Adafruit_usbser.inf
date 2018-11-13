@@ -11,7 +11,7 @@ ClassGuid={4D36E978-E325-11CE-BFC1-08002BE10318}
 Provider=%MFGNAME%
 LayoutFile=layout.inf
 CatalogFile=%MFGFILENAME%.cat
-DriverVer=07/30/2018,10.2.3.2
+DriverVer=11/13/2018,10.2.3.3
 DriverPackageDisplayName=%DESCRIPTION%
 
 [Manufacturer]
@@ -102,6 +102,10 @@ AddService=, 0x00000002
 ;------------------------------------------------------------------------------
 [SourceDisksFiles]
 [SourceDisksNames]
+
+;------------------------------------------------------------------------------
+; 32-bit Windows: should be identical to the 64-bit entries below
+;------------------------------------------------------------------------------
 [DeviceList]
 "%FLORA% Bootloader (0004)"=DriverInstall, USB\VID_239A&PID_0004
 "%FLORA% Arduino (8004:00)"=DriverInstall, USB\VID_239A&PID_8004&MI_00
@@ -198,8 +202,16 @@ AddService=, 0x00000002
 "%FEATHER_NRF52840% Arduino (8029:00)"=DriverInstall, USB\VID_239A&PID_8029&MI_00
 "%FEATHER_NRF52840% CircuitPython (802A:00)"=DriverInstall, USB\VID_239A&PID_802A&MI_00
 
+"%TRELLIS_M4_EXPRESS% UF2 Bootloader (002F:00)"=DriverInstall, USB\VID_239A&PID_002F&MI_00
+"%TRELLIS_M4_EXPRESS% UF2 WebUSB dummy (002F:04)"=NullInstall, USB\VID_239A&PID_002F&MI_04
+"%TRELLIS_M4_EXPRESS% Arduino (802F:00)"=DriverInstall, USB\VID_239A&PID_802F&MI_00
+"%TRELLIS_M4_EXPRESS% CircuitPython (8030:00)"=DriverInstall, USB\VID_239A&PID_8030&MI_00
+
 "%TEENSY_36% Arduino (16C0/0483)"=DriverInstall, USB\VID_16C0&PID_0483
 
+;------------------------------------------------------------------------------
+; 64-bit Windows: should be identical to the 32-bit entries above
+;------------------------------------------------------------------------------
 [DeviceList.NTamd64]
 "%FLORA% Bootloader (0004)"=DriverInstall, USB\VID_239A&PID_0004
 "%FLORA% Arduino (8004:00)"=DriverInstall, USB\VID_239A&PID_8004&MI_00
@@ -296,6 +308,11 @@ AddService=, 0x00000002
 "%FEATHER_NRF52840_EXPRESS% Arduino (8029:00)"=DriverInstall, USB\VID_239A&PID_8029&MI_00
 "%FEATHER_NRF52840_EXPRESS% CircuitPython (802A:00)"=DriverInstall, USB\VID_239A&PID_802A&MI_00
 
+"%TRELLIS_M4_EXPRESS% UF2 Bootloader (002F:00)"=DriverInstall, USB\VID_239A&PID_002F&MI_00
+"%TRELLIS_M4_EXPRESS% UF2 WebUSB dummy (002F:04)"=NullInstall, USB\VID_239A&PID_002F&MI_04
+"%TRELLIS_M4_EXPRESS% Arduino (802F:00)"=DriverInstall, USB\VID_239A&PID_802F&MI_00
+"%TRELLIS_M4_EXPRESS% CircuitPython (8030:00)"=DriverInstall, USB\VID_239A&PID_8030&MI_00
+
 "%TEENSY_36% Arduino (16C0/0483)"=DriverInstall, USB\VID_16C0&PID_0483
 
 ;------------------------------------------------------------------------------
@@ -323,6 +340,7 @@ ITSYBITSY_M0_EXPRESS="Adafruit ItsyBitsy M0 Express"
 ITSYBITSY_M4_EXPRESS="Adafruit ItsyBitsy M4 Express"
 PIRKEY_M0="Adafruit pIRKey M0"
 HALLOWING_M0_EXPRESS="Adafruit HalloWing M0 Express"
+TRELLIS_M4_EXPRESS="Adafruit Trellis M4 Express"
 TEENSY_36="PJRC Teensy 3.6"
 CRICKIT_M0="Adafruit Crickit M0"
 FEATHER_NRF52840_EXPRESS="Feather nRF52840 Express"
