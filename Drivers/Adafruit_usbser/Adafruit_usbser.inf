@@ -207,6 +207,11 @@ AddService=, 0x00000002
 "%TRELLIS_M4_EXPRESS% Arduino (802F:00)"=DriverInstall, USB\VID_239A&PID_802F&MI_00
 "%TRELLIS_M4_EXPRESS% CircuitPython (8030:00)"=DriverInstall, USB\VID_239A&PID_8030&MI_00
 
+"%PYBADGE_M4_EXPRESS% UF2 Bootloader (0033:00)"=DriverInstall, USB\VID_239A&PID_0033&MI_00
+"%PYBADGE_M4_EXPRESS% UF2 WebUSB dummy (0033:04)"=NullInstall, USB\VID_239A&PID_0033&MI_04
+"%PYBADGE_M4_EXPRESS% Arduino (8033:00)"=DriverInstall, USB\VID_239A&PID_8033&MI_00
+"%PYBADGE_M4_EXPRESS% CircuitPython (8034:00)"=DriverInstall, USB\VID_239A&PID_8034&MI_00
+
 "%TEENSY_36% Arduino (16C0/0483)"=DriverInstall, USB\VID_16C0&PID_0483
 
 ;------------------------------------------------------------------------------
@@ -313,6 +318,11 @@ AddService=, 0x00000002
 "%TRELLIS_M4_EXPRESS% Arduino (802F:00)"=DriverInstall, USB\VID_239A&PID_802F&MI_00
 "%TRELLIS_M4_EXPRESS% CircuitPython (8030:00)"=DriverInstall, USB\VID_239A&PID_8030&MI_00
 
+"%PYBADGE_M4_EXPRESS% UF2 Bootloader (0033:00)"=DriverInstall, USB\VID_239A&PID_0033&MI_00
+"%PYBADGE_M4_EXPRESS% UF2 WebUSB dummy (0033:04)"=NullInstall, USB\VID_239A&PID_0033&MI_04
+"%PYBADGE_M4_EXPRESS% Arduino (8033:00)"=DriverInstall, USB\VID_239A&PID_8033&MI_00
+"%PYBADGE_M4_EXPRESS% CircuitPython (8034:00)"=DriverInstall, USB\VID_239A&PID_8034&MI_00
+
 "%TEENSY_36% Arduino (16C0/0483)"=DriverInstall, USB\VID_16C0&PID_0483
 
 ;------------------------------------------------------------------------------
@@ -344,6 +354,7 @@ TRELLIS_M4_EXPRESS="Adafruit Trellis M4 Express"
 TEENSY_36="PJRC Teensy 3.6"
 CRICKIT_M0="Adafruit Crickit M0"
 FEATHER_NRF52840_EXPRESS="Feather nRF52840 Express"
+PYBADGE_M4_EXPRESS="Adafruit pyBadge M4 Express"
 
 MFGFILENAME="Adafruit_usbser"
 DRIVERFILENAME ="usbser"
