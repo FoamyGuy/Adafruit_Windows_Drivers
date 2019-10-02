@@ -5,7 +5,7 @@
 !include WinVer.nsh   # Windows version detection.
 !include x64.nsh      # X86/X64 version detection.
 
-!define VERSION 2.3.4.0
+!define VERSION 2.4.0.0
 
 # Set attributes that describe the installer.
 Icon "Assets\adafruit.ico"
@@ -23,7 +23,7 @@ VIAddVersionKey /LANG=1033 "ProductName" "Adafruit Board Drivers"
 VIAddVersionKey /LANG=1033 "CompanyName" "Adafruit Industries"
 VIAddVersionKey /LANG=1033 "LegalCopyright" "Adafruit Industries"
 VIAddVersionKey /LANG=1033 "FileDescription" "All in one installer for Adafruit's board drivers."
-VIAddVersionKey /LANG=1033 "FileVersion" "2.3.4.0"
+VIAddVersionKey /LANG=1033 "FileVersion" "2.4.0.0"
 VIProductVersion ${VERSION}
 VIFileVersion ${VERSION}
 
@@ -68,7 +68,7 @@ Section
   ${EndIf}
 SectionEnd
 
-Section "Feather 32u4, Feather M0, Feather M0 Express, Metro M0 Express, Circuit Playground, CircuitPlayground Express, Gemma M0, Trinket M0, Itsy Bitsy 32u4 and M0, pIRKey M0, HalloWing M0 Express, Flora, Bluefruit Micro" USBSER_BOARDS
+Section "All other Adafruit boards, and Teensy 3.6" USBSER_BOARDS
   # Use dpinst to install the driver.
   # Note the following options are specified:
   #  /sw = silent mode, hide the installer but NOT the OS prompts (critical!)
