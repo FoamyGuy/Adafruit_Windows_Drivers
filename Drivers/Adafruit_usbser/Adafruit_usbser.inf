@@ -705,6 +705,8 @@ AddService=, 0x00000002
 "%ADAFRUIT_BOARD_807E% Arduino (807D:00)"=DriverInstall, USB\VID_239A&PID_807D&MI_00
 "%ADAFRUIT_BOARD_807E% CircuitPython (807E:00)"=DriverInstall, USB\VID_239A&PID_807E&MI_00
 
+"%PEWPEW_BOARDS% CircuitPython (60E8:00)"=DriverInstall, USB\VID_1D50&PID_60E8&MI_00
+
 ;------------------------------------------------------------------------------
 ;  String Definitions
 ;------------------------------------------------------------------------------
@@ -773,6 +775,7 @@ ADAFRUIT_BOARD_8078="ADAFRUIT_BOARD_8078"
 ADAFRUIT_BOARD_807A="ADAFRUIT_BOARD_807A"
 ADAFRUIT_BOARD_807C="ADAFRUIT_BOARD_807C"
 ADAFRUIT_BOARD_807E="ADAFRUIT_BOARD_807E"
+PEWPEW_BOARDS="PewPew"
 
 
 
