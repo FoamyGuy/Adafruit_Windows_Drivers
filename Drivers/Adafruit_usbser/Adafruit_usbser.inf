@@ -707,6 +707,8 @@ AddService=, 0x00000002
 
 "%PEWPEW_BOARDS% CircuitPython (60E8:00)"=DriverInstall, USB\VID_1D50&PID_60E8&MI_00
 
+"%SEEED_BOARDS% CircuitPython (802D:00)"=DriverInstall, USB\VID_2886&PID_802D&REV_0100&MI_00
+
 ;------------------------------------------------------------------------------
 ;  String Definitions
 ;------------------------------------------------------------------------------
@@ -776,6 +778,7 @@ ADAFRUIT_BOARD_807A="ADAFRUIT_BOARD_807A"
 ADAFRUIT_BOARD_807C="ADAFRUIT_BOARD_807C"
 ADAFRUIT_BOARD_807E="ADAFRUIT_BOARD_807E"
 PEWPEW_BOARDS="PewPew"
+SEEED_BOARDS="Seeeduino Wio Terminal"
 
 
 
